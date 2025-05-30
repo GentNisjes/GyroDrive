@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+android:shape="rectangle">
+ <!-- #80ADD8E6 #b5d9dc-->
+<corners android:radius="30dp"/> <!-- Set corner radius (adjust the radius value as needed) -->
+</shape>

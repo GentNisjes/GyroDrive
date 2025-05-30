@@ -1,0 +1,13 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.GyroDrive" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your dark theme here. -->
+        <item name="android:colorBackground">#F8D2B1</item>
+        <item name="colorPrimary">#B5D9DC</item>
+        <item name="colorPrimaryVariant">#CAD8DD</item>
+        <item name="colorOnPrimary">@color/black</item>
+        <item name="actionMenuTextColor">#000000</item>
+        <!--<item name="android:forceDarkAllowed"</item>-->
+        <!-- <item name="colorPrimary">@color/my_dark_primary</item> -->
+    </style>
+</resources>

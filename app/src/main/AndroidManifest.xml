@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@drawable/race_car_logo"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.GyroDrive"
+        tools:targetApi="31">
+<!--        activities-->
+
+<!--        for landscape mode use:-->
+<!--        android:theme="@style/Theme.AppCompat.DayNight.NoActionBar"-->
+        <activity
+            android:name=".Struct1.MenuTest"
+            android:exported="true"
+            android:screenOrientation="landscape"
+            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar">
+        </activity>
+        <activity
+            android:name=".Struct1.EndGame"
+            android:exported="true"
+            android:screenOrientation="landscape">
+        </activity>
+        <activity
+            android:name=".Struct1.GameMenu"
+            android:exported="true"
+            android:screenOrientation="landscape"
+            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar">
+        </activity>
+        <activity
+            android:name=".Struct1.RegisterActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Struct1.RegisterConfirmationActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Struct1.ShowUserActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Struct1.ShowLeaderBoardActivity"
+            android:exported="false"
+            android:screenOrientation="landscape"
+            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar"/>
+
+
+        <!--main activity-->
+        <activity
+            android:name=".Struct1.WelcomeActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <!--
+        <activity
+            android:name=".Final.MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        -->
+        <!-- android:theme="@android:style/Theme.NoTitleBar.Fullscreen" -->
+
+        <activity
+            android:name=".Struct1.GameActivity"
+            android:exported="true"
+            android:screenOrientation="landscape"
+            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar">
+        </activity>
+        <!--
+<activity
+            android:name=".Struct2.MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        -->
+        <!--
+<activity
+            android:name=".TrackTest"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        -->
+        <activity
+            android:name=".testCodes.AngleGyro"
+            android:exported="true"
+            android:screenOrientation="landscape">
+        </activity>
+        <activity
+            android:name=".testCodes.Magnetometer"
+            android:exported="true"
+            android:screenOrientation="landscape">
+        </activity>
+        <activity
+            android:name=".testCodes.GyroscopeVisualization"
+            android:exported="true"
+            android:screenOrientation="landscape">
+        </activity>
+        <activity
+            android:name=".testCodes.GyroscopeTesting"
+            android:exported="true"
+            android:screenOrientation="portrait">
+        </activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>

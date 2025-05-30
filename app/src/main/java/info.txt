@@ -1,0 +1,21 @@
+TODO
+    leader board
+    writing plays to database
+    function for checking requirements
+    round icon
+
+web service:
+    register new user:
+        https://studev.groept.be/api/a23PT404/register/username/email/name/surname/password
+
+    select all users
+        https://studev.groept.be/api/a23PT404/selectAll
+
+    select user
+        https://studev.groept.be/api/a23PT404/selectuser/username
+
+    select all plays
+        https://studev.groept.be/api/a23PT404/selectAllPlays
+
+    save new play
+        https://studev.groept.be/api/a23PT404/savePlay/username/duration/device/level/id

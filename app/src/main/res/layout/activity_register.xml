@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Struct1.RegisterActivity">
+
+    <!--TODO-->
+    <!--https://www.geeksforgeeks.org/implement-form-validation-error-to-edittext-in-android/-->
+
+    <EditText
+        android:id="@+id/txtUsernameR"
+        android:layout_width="209dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="44dp"
+        android:background="@drawable/border"
+
+        android:ems="10"
+        android:hint="Type your username"
+        android:inputType="text"
+        android:paddingLeft="5pt"
+        android:paddingRight="5pt"
+        app:layout_constraintBottom_toTopOf="@+id/txtSurnameR"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/txtNameR"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="16dp"
+        android:background="@drawable/border"
+        android:ems="10"
+
+        android:hint="Type your Name"
+        android:inputType="text"
+        android:paddingLeft="5pt"
+        android:paddingRight="5pt"
+        app:layout_constraintBottom_toBottomOf="@+id/txtSurnameR"
+        app:layout_constraintEnd_toStartOf="@+id/txtSurnameR"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/txtEmailR"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="44dp"
+        android:background="@drawable/border"
+        android:ems="10"
+
+        android:hint="Type your email"
+        android:inputType="textEmailAddress"
+        android:paddingLeft="5pt"
+        android:paddingRight="5pt"
+        app:layout_constraintBottom_toTopOf="@+id/txtPasswordR"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.516"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/txtSurnameR"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginBottom="44dp"
+        android:background="@drawable/border"
+        android:ems="10"
+        android:hint="Type your Surname"
+        android:inputType="text"
+        android:paddingLeft="5pt"
+        android:paddingRight="5pt"
+        app:layout_constraintBottom_toTopOf="@+id/txtEmailR"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <EditText
+        android:id="@+id/txtPasswordR"
+        android:layout_width="216dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="188dp"
+        android:background="@drawable/border"
+        android:ems="10"
+        android:hint="Type your password"
+        android:inputType="textPassword"
+        android:paddingLeft="5pt"
+
+        android:paddingRight="5pt"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btnRegisterR"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="84dp"
+
+        android:background="@drawable/border2"
+        android:backgroundTint="#B5D9DC"
+        android:backgroundTintMode="add"
+        android:onClick="onBtnRegister_Clicked"
+
+        android:text="Register"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/UserView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/border"
+        android:paddingLeft="5pt"
+        android:paddingRight="5pt"
+        android:text="*Username - login"
+        app:layout_constraintBottom_toTopOf="@+id/txtUsernameR"
+        app:layout_constraintStart_toStartOf="@+id/txtUsernameR" />
+
+    <TextView
+        android:id="@+id/EmailView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/border"
+        android:paddingLeft="5pt"
+        android:paddingRight="5pt"
+        android:text="E-mail address"
+        app:layout_constraintBottom_toTopOf="@+id/txtEmailR"
+        app:layout_constraintStart_toStartOf="@+id/txtEmailR" />
+
+    <TextView
+        android:id="@+id/NameView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/border"
+        android:paddingLeft="5pt"
+        android:paddingRight="5pt"
+        android:text="Name"
+        app:layout_constraintBottom_toTopOf="@+id/txtNameR"
+        app:layout_constraintStart_toStartOf="@+id/txtNameR" />
+
+    <TextView
+        android:id="@+id/SurnameView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/border"
+        android:paddingLeft="5pt"
+        android:paddingRight="5pt"
+        android:text="Surname"
+        app:layout_constraintBottom_toTopOf="@+id/txtSurnameR"
+        app:layout_constraintStart_toStartOf="@+id/txtSurnameR" />
+
+    <TextView
+        android:id="@+id/PasswordView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/border"
+        android:paddingLeft="5pt"
+        android:paddingRight="5pt"
+        android:text="*Password - min 8 char"
+        app:layout_constraintBottom_toTopOf="@+id/txtPasswordR"
+        app:layout_constraintStart_toStartOf="@+id/txtPasswordR" />
+
+    <TextView
+        android:id="@+id/topHeaderReg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:gravity="center"
+        android:text="New account registration"
+        android:textSize="30dp"
+
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.45"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
