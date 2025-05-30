@@ -2,7 +2,6 @@
 
 **GyroDrive** is a lightweight Android racing game controlled entirely by the **device's gyroscope**. Tilt your phone to steer, accelerate, and race through thrilling tracks!
 
----
 
 ## About the Project
 
